@@ -6,7 +6,16 @@ import RoomPage from "./pages/room/RoomPage";
 import VictoryPage from "./pages/victory/VictoryPage";
 
 const App = () => {
-  return <div></div>;
+  return (
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/room/:roomPath" element={<RoomPage />} />
+        <Route path="/victory" element={<VictoryPage />} />
+      </Routes>
+    </BrowserRouter>
+  );
 };
 
 export default App;
