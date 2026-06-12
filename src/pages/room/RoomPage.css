@@ -1,0 +1,57 @@
+.room {
+  display: grid;
+  gap: 1.4rem;
+  padding: 2rem;
+  border-radius: 16px;
+  background: rgba(21, 27, 35, 0.96);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+.room h2 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.room-image {
+  width: 100%;
+  max-height: 520px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  filter: contrast(1.05) brightness(0.9);
+}
+
+.room p {
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.hint {
+  padding: 1rem;
+  border-left: 5px solid var(--gold);
+  background: #211a0d;
+  color: #facc15;
+  border-radius: 8px;
+}
+
+.item-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.item-actions button {
+  background: #111827;
+  border-color: var(--border);
+  color: white;
+}
+
+.item-actions button:hover {
+  border-color: var(--gold);
+  box-shadow: 0 0 18px rgba(214, 168, 79, 0.3);
+}

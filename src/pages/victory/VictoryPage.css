@@ -1,0 +1,13 @@
+.victory-card h2 {
+  margin: 0 0 1rem;
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  color: var(--gold);
+  text-transform: uppercase;
+}
+
+.victory-card p {
+  color: var(--muted);
+  line-height: 1.7;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}

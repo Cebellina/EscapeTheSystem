@@ -1,0 +1,31 @@
+.home {
+  min-height: 75vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.home-content {
+  max-width: 780px;
+  padding: 3rem;
+  border-radius: 16px;
+  background: rgba(21, 27, 35, 0.94);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+.home h1 {
+  margin: 0 0 1rem;
+  font-size: clamp(2.4rem, 6vw, 4.8rem);
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.home p {
+  color: var(--muted);
+  line-height: 1.7;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}

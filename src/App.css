@@ -1,0 +1,24 @@
+main {
+  width: min(1100px, calc(100% - 2rem));
+  margin: 2rem auto;
+}
+
+button,
+.button {
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  padding: 0.75rem 1.2rem;
+  background: var(--accent);
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  transition: 0.2s ease;
+}
+
+button:hover,
+.button:hover {
+  background: var(--accent-light);
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px rgba(239, 68, 68, 0.35);
+}

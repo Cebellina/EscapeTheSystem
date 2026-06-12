@@ -2,7 +2,7 @@ import "./HomePage.css";
 
 const HomePage = () => {
   return (
-    <div className="homePage">
+    <div className="home-content">
       <p>
         You wake up under flickering fluorescent lights. The hum of failing
         machines echoes through cold metal corridors. You are trapped inside
