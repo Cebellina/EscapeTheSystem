@@ -34,6 +34,32 @@
   text-align: center;
 }
 
+/* Return to Home button */
+
+.victory-card .button {
+  display: inline-block;
+
+  padding: 0.9rem 1.6rem;
+
+  border-radius: 10px;
+  border: 1px solid var(--accent);
+
+  background: var(--accent);
+  color: white;
+
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  transition: 0.2s ease;
+}
+
+.victory-card .button:hover {
+  background: var(--accent-light);
+  transform: translateY(-2px);
+  box-shadow: 0 0 24px rgba(239, 68, 68, 0.35);
+}
+
 @media (max-width: 700px) {
   .victory {
     min-height: auto;
@@ -54,5 +80,10 @@
   .victory-card p {
     font-size: 0.95rem;
     line-height: 1.6;
+  }
+
+  .victory-card .button {
+    width: 100%;
+    max-width: 280px;
   }
 }
