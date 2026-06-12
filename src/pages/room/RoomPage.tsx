@@ -9,10 +9,8 @@ export default function RoomPage() {
   const { roomPath } = useParams();
   const navigate = useNavigate();
   const [searchParams, setSearchParams] = useSearchParams();
-
   const { inventory, addItem, hasItem } = useInventory();
   const [exitSolved, setExitSolved] = useState(false);
-
   const typedRooms = rooms as Room[];
   const foundRoom = typedRooms.find((room) => room.roomPath === roomPath);
 
@@ -21,7 +19,6 @@ export default function RoomPage() {
   }
 
   const room = foundRoom;
-
   const isExitRoom = room.itemToAdd === null;
 
   const roomIsSolved = isExitRoom
@@ -40,7 +37,6 @@ export default function RoomPage() {
 
   function handleUseItem(itemId: number) {
     if (roomIsSolved) return;
-
     if (!hasItem(itemId)) return;
 
     if (itemId !== room.itemToSolve) {
