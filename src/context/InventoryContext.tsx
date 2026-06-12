@@ -24,9 +24,7 @@ export function InventoryProvider({ children }: { children: ReactNode }) {
   function addItem(itemId: number) {
     const itemToAdd = typedItems.find((item) => item.id === itemId);
 
-    if (!itemToAdd) {
-      return;
-    }
+    if (!itemToAdd) return;
 
     setInventory((currentInventory) => {
       const alreadyExists = currentInventory.some((item) => item.id === itemId);

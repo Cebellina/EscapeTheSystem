@@ -1,0 +1,44 @@
+.inventory {
+  margin-top: 2rem;
+  padding: 1rem;
+  border: 1px solid #dbe3ea;
+  border-radius: 16px;
+  background: #ffffff;
+}
+
+.inventory h2 {
+  margin-bottom: 1rem;
+}
+
+.inventory-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.inventory-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.8rem;
+  border-radius: 12px;
+  background: #f5f7fa;
+}
+
+.inventory-item img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: white;
+}
+
+.inventory-item h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.inventory-item p {
+  margin: 0.25rem 0 0;
+  font-size: 0.9rem;
+  color: #52616b;
+}

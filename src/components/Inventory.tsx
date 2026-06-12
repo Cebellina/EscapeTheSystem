@@ -1,3 +1,4 @@
+import "./Inventory.css";
 import { useInventory } from "../context/InventoryContext";
 
 export default function Inventory() {
@@ -9,11 +10,14 @@ export default function Inventory() {
 
       <div className="inventory-list">
         {inventory.map((item) => (
-          <div key={item.id} className="inventory-item">
+          <article key={item.id} className="inventory-item">
             <img src={item.image} alt={item.item} />
-            <strong>{item.item}</strong>
-            <p>{item.description}</p>
-          </div>
+
+            <div>
+              <h3>{item.item}</h3>
+              <p>{item.description}</p>
+            </div>
+          </article>
         ))}
       </div>
     </aside>
