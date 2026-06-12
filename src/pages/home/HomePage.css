@@ -3,13 +3,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 1.5rem;
+  text-align: center;
 }
 
 .home-content {
   width: 100%;
   max-width: 900px;
-  padding: 4rem;
+  padding: 3rem;
   text-align: center;
 
   background: rgba(21, 27, 35, 0.95);
@@ -23,21 +24,45 @@
 
 .home h1 {
   margin: 0 0 1.5rem;
-  font-size: clamp(3rem, 7vw, 5.5rem);
+  font-size: clamp(2.5rem, 7vw, 5.5rem);
   color: var(--gold);
   text-transform: uppercase;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.1em;
   text-shadow: 0 0 18px rgba(214, 168, 79, 0.25);
 }
 
 .home p {
   max-width: 720px;
-  margin: 0 auto 1.2rem;
+  margin: 0 auto 1.1rem;
   color: var(--muted);
-  font-size: 1.1rem;
-  line-height: 1.8;
+  font-size: 1.08rem;
+  line-height: 1.75;
+  text-align: center;
 }
 
 .home strong {
   color: var(--gold);
+}
+
+@media (max-width: 700px) {
+  .home {
+    min-height: auto;
+    padding: 1rem;
+    align-items: flex-start;
+  }
+
+  .home-content {
+    padding: 1.5rem;
+    border-radius: 14px;
+  }
+
+  .home h1 {
+    font-size: clamp(2rem, 10vw, 3.2rem);
+    letter-spacing: 0.06em;
+  }
+
+  .home p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
 }

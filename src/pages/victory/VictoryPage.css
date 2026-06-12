@@ -3,29 +3,56 @@
   display: grid;
   place-items: center;
   text-align: center;
-  padding: 2rem;
+  padding: 1.5rem;
 }
 
 .victory-card {
+  width: 100%;
   max-width: 760px;
   padding: 3rem;
   border-radius: 16px;
   background: rgba(21, 27, 35, 0.95);
   border: 1px solid var(--border);
   box-shadow: var(--shadow);
+  text-align: center;
 }
 
 .victory-card h2 {
   margin: 0 0 1rem;
-  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-size: clamp(2.2rem, 6vw, 5rem);
   color: var(--gold);
   text-transform: uppercase;
   letter-spacing: 0.08em;
 }
 
 .victory-card p {
+  max-width: 620px;
+  margin: 0 auto 2rem;
   color: var(--muted);
   line-height: 1.7;
   font-size: 1.1rem;
-  margin-bottom: 2rem;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .victory {
+    min-height: auto;
+    padding: 1rem;
+    align-items: flex-start;
+  }
+
+  .victory-card {
+    padding: 1.5rem;
+    border-radius: 14px;
+  }
+
+  .victory-card h2 {
+    font-size: clamp(2rem, 10vw, 3.2rem);
+    letter-spacing: 0.05em;
+  }
+
+  .victory-card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
 }

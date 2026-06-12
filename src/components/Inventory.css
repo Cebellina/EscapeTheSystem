@@ -1,7 +1,9 @@
 .inventory {
   width: min(1100px, calc(100% - 2rem));
-  margin: 2rem auto;
-  padding: 1.5rem;
+  margin: 1.5rem auto;
+  padding: 1.25rem;
+
+  text-align: center;
 
   border-radius: 14px;
   background: rgba(21, 27, 35, 0.95);
@@ -18,24 +20,25 @@
 
 .inventory-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
   gap: 1rem;
 }
 
 .inventory-item {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
+  display: grid;
+  place-items: center;
+  gap: 0.75rem;
 
   padding: 1rem;
   border-radius: 12px;
   background: var(--surface-light);
   border: 1px solid var(--border);
+  text-align: center;
 }
 
 .inventory-item img {
-  width: 64px;
-  height: 64px;
+  width: 58px;
+  height: 58px;
   object-fit: contain;
   padding: 0.35rem;
 
@@ -47,10 +50,42 @@
 .inventory-item h3 {
   margin: 0;
   color: white;
+  font-size: 1rem;
 }
 
 .inventory-item p {
-  margin: 0.25rem 0 0;
+  margin: 0;
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: 0.88rem;
+  line-height: 1.4;
+}
+
+@media (max-width: 700px) {
+  .inventory {
+    width: min(100% - 1rem, 1000px);
+    margin: 1rem auto;
+    padding: 1rem;
+  }
+
+  .inventory-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+  }
+
+  .inventory-item {
+    padding: 0.75rem;
+  }
+
+  .inventory-item img {
+    width: 46px;
+    height: 46px;
+  }
+
+  .inventory-item h3 {
+    font-size: 0.85rem;
+  }
+
+  .inventory-item p {
+    display: none;
+  }
 }
