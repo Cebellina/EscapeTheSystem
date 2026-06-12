@@ -5,14 +5,16 @@ main {
 
 button,
 .button {
+  display: inline-block;
   border: 1px solid var(--accent);
-  border-radius: 8px;
-  padding: 0.75rem 1.2rem;
+  border-radius: 10px;
+  padding: 0.85rem 1.4rem;
   background: var(--accent);
   color: white;
   cursor: pointer;
   font-weight: 700;
-  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
   transition: 0.2s ease;
 }
 
@@ -20,5 +22,5 @@ button:hover,
 .button:hover {
   background: var(--accent-light);
   transform: translateY(-2px);
-  box-shadow: 0 0 20px rgba(239, 68, 68, 0.35);
+  box-shadow: 0 0 24px rgba(239, 68, 68, 0.35);
 }
