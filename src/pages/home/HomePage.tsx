@@ -3,6 +3,7 @@ import "./HomePage.css";
 const HomePage = () => {
   return (
     <div className="homePage">
+      <h1>Project Nexus</h1>
       <p>
         You wake up under flickering fluorescent lights. The hum of failing
         machines echoes through cold metal corridors. You are trapped inside
