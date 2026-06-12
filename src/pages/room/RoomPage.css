@@ -1,6 +1,9 @@
 .room {
+  width: min(1100px, calc(100% - 2rem));
+  margin: 2rem auto;
   display: grid;
   gap: 1.4rem;
+
   padding: 2rem;
   border-radius: 16px;
   background: rgba(21, 27, 35, 0.96);
@@ -18,11 +21,17 @@
 
 .room-image {
   width: 100%;
-  max-height: 520px;
-  object-fit: cover;
+  max-width: 1000px;
+  max-height: 680px;
+  object-fit: contain;
+
+  display: block;
+  margin: 0 auto;
+
   border-radius: 12px;
   border: 1px solid var(--border);
-  filter: contrast(1.05) brightness(0.9);
+  background: #05070a;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
 }
 
 .room p {

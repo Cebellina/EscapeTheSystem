@@ -1,8 +1,26 @@
+.victory {
+  min-height: calc(100vh - 80px);
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.victory-card {
+  max-width: 760px;
+  padding: 3rem;
+  border-radius: 16px;
+  background: rgba(21, 27, 35, 0.95);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
 .victory-card h2 {
   margin: 0 0 1rem;
   font-size: clamp(2.5rem, 6vw, 5rem);
   color: var(--gold);
   text-transform: uppercase;
+  letter-spacing: 0.08em;
 }
 
 .victory-card p {

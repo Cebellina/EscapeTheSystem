@@ -2,6 +2,7 @@
   width: min(1100px, calc(100% - 2rem));
   margin: 2rem auto;
   padding: 1.5rem;
+
   border-radius: 14px;
   background: rgba(21, 27, 35, 0.95);
   border: 1px solid var(--border);
@@ -25,6 +26,7 @@
   display: flex;
   gap: 1rem;
   align-items: center;
+
   padding: 1rem;
   border-radius: 12px;
   background: var(--surface-light);
@@ -36,6 +38,7 @@
   height: 64px;
   object-fit: contain;
   padding: 0.35rem;
+
   border-radius: 8px;
   background: #090c10;
   border: 1px solid var(--border);
