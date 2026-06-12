@@ -21,13 +21,10 @@
 
 .room-image {
   width: 100%;
-  max-width: 1000px;
-  max-height: 680px;
+  height: min(52vh, 520px);
   object-fit: contain;
-
   display: block;
   margin: 0 auto;
-
   border-radius: 12px;
   border: 1px solid var(--border);
   background: #05070a;
