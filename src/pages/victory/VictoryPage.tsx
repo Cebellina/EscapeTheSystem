@@ -1,15 +1,15 @@
 import { Link } from "react-router-dom";
 import "./VictoryPage.css";
 
-export default function Victory() {
+export default function VictoryPage() {
   return (
     <section>
-      <h2>Du rymde!</h2>
+      <h2>You Escaped!</h2>
       <p>
-        Du lyckades stänga av Project NEXUS och ta dig ut ur anläggningen.
+        You successfully disabled Project NEXUS and escaped the facility.
       </p>
 
-      <Link to="/">Till startsidan</Link>
+      <Link to="/">Return to Home</Link>
     </section>
   );
 }

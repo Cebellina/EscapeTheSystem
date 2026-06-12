@@ -44,7 +44,7 @@ export default function RoomPage() {
     if (!hasItem(itemId)) return;
 
     if (itemId !== room.itemToSolve) {
-      alert("Det föremålet fungerar inte här.");
+      alert("That item doesn't work here.");
       return;
     }
 
@@ -68,19 +68,19 @@ export default function RoomPage() {
       <p>{roomIsSolved ? room.solvedInstruction : room.unsolvedInstruction}</p>
 
       <button onClick={toggleHint}>
-        {showHint ? "Dölj ledtråd" : "Visa ledtråd"}
+        {showHint ? "Hide Hint" : "Show Hint"}
       </button>
 
-      {showHint && <p className="hint">Ledtråd: {room.hint}</p>}
+      {showHint && <p className="hint">Hint: {room.hint}</p>}
 
       {!roomIsSolved && (
         <>
-          <h3>Använd ett föremål</h3>
+          <h3>Use an Item</h3>
 
           <div className="item-actions">
             {inventory.map((item) => (
               <button key={item.id} onClick={() => handleUseItem(item.id)}>
-                Använd {item.item}
+                Use {item.item}
               </button>
             ))}
           </div>
@@ -89,7 +89,7 @@ export default function RoomPage() {
 
       {isExitRoom && roomIsSolved && (
         <button className="button" onClick={() => navigate("/victory")}>
-          Lämna anläggningen
+          Escape Facility
         </button>
       )}
     </section>

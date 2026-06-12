@@ -1,24 +1,22 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { InventoryProvider } from "./context/InventoryContext";
-import Layout from "./components/Layout";
-import Home from "./pages/home/HomePage";
-import Room from "./pages/room/RoomPage";
-import Victory from "./pages/victory/VictoryPage";
-import NotFound from "./components/navbar/NotFound";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import "./App.css";
+import Navbar from "./components/Navbar";
+import HomePage from "./pages/home/HomePage";
+import RoomPage from "./pages/room/RoomPage";
+import VictoryPage from "./pages/victory/VictoryPage";
 
-export default function App() {
+const App = () => {
   return (
     <BrowserRouter>
-      <InventoryProvider>
-        <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route index element={<Home />} />
-            <Route path="room/:roomPath" element={<Room />} />
-            <Route path="victory" element={<Victory />} />
-            <Route path="*" element={<NotFound />} />
-          </Route>
-        </Routes>
-      </InventoryProvider>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/room/:roomPath" element={<RoomPage />} />
+        <Route path="/victory" element={<VictoryPage />} />
+        <Route path="*" element={<Navigate to="/" />} />
+      </Routes>
     </BrowserRouter>
   );
-}
+};
+
+export default App;
